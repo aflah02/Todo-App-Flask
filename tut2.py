@@ -5,8 +5,7 @@ app = Flask(__name__)
 @app.route("/")
 def hello_world():
     return render_template('index.html')
-@app.route("/aflah")
+@app.route("/bootstrap")
 def aflah():
-    name2 = 'foobar'
-    return render_template('about.html', name=name2)
+    return render_template('bootstrap.html')
 app.run(debug=True)
